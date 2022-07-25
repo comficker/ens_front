@@ -3,7 +3,7 @@
     <div class="flex items-center gap-3">
       <h1 class="text-5xl font-semibold">{{ value.name }}.eth</h1>
     </div>
-    <div class="border p-4 space-y-4">
+    <div class="border p-4 space-y-3">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         <div class="md:py-2">
           <h4 class="text-xs uppercase">Price</h4>
@@ -11,11 +11,17 @@
         </div>
         <div class="md:py-2">
           <h4 class="text-xs uppercase">Born</h4>
-          <div class="text-2xl font-mono font-semibold">{{ formatDateMint }}</div>
+          <div class="text-lg font-mono font-semibold">
+            <div>{{ formatDateMint.toLocaleDateString() }}</div>
+            <div class="text-xs">{{ formatDateMint.toLocaleTimeString() }}</div>
+          </div>
         </div>
         <div class="md:py-2">
           <h4 class="text-xs uppercase">Expired</h4>
-          <div class="text-2xl font-mono font-semibold">{{ formatDate }}</div>
+          <div class="text-2xl font-mono font-semibold">
+            <div>{{ formatDate.toLocaleDateString() }}</div>
+            <div class="text-xs">{{ formatDate.toLocaleTimeString() }}</div>
+          </div>
         </div>
       </div>
       <div class="space-y-2">
@@ -40,9 +46,12 @@
           <div class="font-mono limit">{{ value.owner }}</div>
         </div>
       </div>
+      <div class="text-xs italic border-t border-dashed pt-3">
+        <p>{{ value.name }}.eth registered by {{value.owner}} in {{ formatDateMint.toLocaleString() }} and will be expired in {{formatDate.toLocaleString()}}</p>
+      </div>
     </div>
     <div class="border p-4 bg-gray-50 space-y-2 font-mono">
-      <h2 class="uppercase text-gray-500 font-bold">Metadata</h2>
+      <h2 class="uppercase text-gray-500 font-bold">{{ value.name }}.eth Metadata</h2>
       <div v-for="item in Object.keys(traits)" :key="item" class="flex text-xs">
         <div class="w-36">{{ item }}</div>
         <div class="font-mono limit">
@@ -52,7 +61,7 @@
       </div>
     </div>
     <div>
-      <table class="min-w-full divide-y divide-gray-300 border">
+      <table class="min-w-full border">
         <thead class="bg-gray-50">
         <tr>
           <th scope="col"
@@ -78,7 +87,10 @@
           </td>
           <td class="hidden md:table-cell whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{ normalizeAdd(row.fr) }}</td>
           <td class="whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{ normalizeAdd(row.to) }}</td>
-          <td class="whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{ row.timestamp }}</td>
+          <td class="whitespace-nowrap py-2 px-3 text-gray-500 text-xs">
+            <div class="font-bold">{{ new Date(row.timestamp).toLocaleDateString() }}</div>
+            <div class="text-gray-500">{{ new Date(row.timestamp).toLocaleTimeString() }}</div>
+          </td>
         </tr>
         </tbody>
       </table>
@@ -101,12 +113,10 @@ export default {
       return this.displayPrice(this.value.current_price)
     },
     formatDate() {
-      const date = new Date(this.value.expired_date)
-      return date.toLocaleDateString()
+      return new Date(this.value.expired_date)
     },
     formatDateMint() {
-      const date = new Date(this.value.mint_date)
-      return date.toLocaleDateString()
+      return new Date(this.value.mint_date)
     },
     rows() {
       return [
@@ -125,8 +135,7 @@ export default {
         "com.github": "",
         "com.reddit": "",
         "com.twitter": "",
-        "org.telegram": "",
-        "eth.ens.delegate": ""
+        "org.telegram": ""
       }
     }
   }
@@ -134,10 +143,4 @@ export default {
 </script>
 
 <style scoped>
-.limit {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-}
 </style>

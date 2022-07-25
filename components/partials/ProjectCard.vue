@@ -1,19 +1,23 @@
 <template>
-  <div class="p-4 py-2 -mx-4 flex space-x-4 items-center hover:bg-gray-100 duration-300 border-t">
-    <div class="flex-1">
-      <h4 class="font-bold leading-none">
-        <nuxt-link :to="`/${value.id}-${value.name}.eth`">{{ value.name }}.eth</nuxt-link>
-      </h4>
+  <div class="p-4 py-2 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 border-t">
+    <div class="flex-1 relative">
+      <div class="absolute inset-0 flex items-center">
+        <h4 class="font-bold leading-none limit">
+          <nuxt-link :to="`/${value.id}-${value.name}.eth`">{{ value.name }}.eth</nuxt-link>
+        </h4>
+      </div>
     </div>
     <div class="w-24 flex space-x-1 items-center justify-end">
       <span>{{ formatPrice }}</span>
       <icon name="eth"></icon>
     </div>
-    <div class="w-24 hidden md:block text-right">
-      {{ formatDateMint }}
+    <div class="w-24 hidden md:block text-right text-xs">
+      <div class="font-bold">{{ mintDate.toLocaleDateString() }}</div>
+      <div class="text-gray-500">{{ mintDate.toLocaleTimeString() }}</div>
     </div>
-    <div class="w-24 text-right flex justify-end items-center space-x-2">
-      {{ formatDate }}
+    <div class="w-24 text-right text-xs">
+      <div class="font-bold">{{ expiredDate.toLocaleDateString() }}</div>
+      <div class="text-gray-500">{{ expiredDate.toLocaleTimeString() }}</div>
     </div>
   </div>
 </template>
@@ -32,17 +36,11 @@ export default {
     formatPrice() {
       return (+web3.utils.fromWei(Number.parseInt(this.value.current_price).toString())).toFixed(5)
     },
-    formatDate() {
-      const date = new Date(this.value.expired_date)
-      return date.toLocaleDateString()
+    expiredDate() {
+      return new Date(this.value.expired_date)
     },
-    formatDateMint() {
-      if (this.value.mint_date) {
-        const date = new Date(this.value.mint_date)
-        return date.toLocaleDateString()
-      } else {
-        return '_'
-      }
+    mintDate() {
+      return new Date(this.value.mint_date)
     }
   }
 }

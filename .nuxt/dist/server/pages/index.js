@@ -1,14 +1,14 @@
 exports.ids = [2];
 exports.modules = {
 
-/***/ 44:
+/***/ 41:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=238f61c4&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=6838b3ce&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -21,14 +21,16 @@ var render = function render() {
     attrs: {
       "name": "sort"
     }
-  }), _vm._ssrNode(" <span>Filter</span>")], 2)])], 2), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"border px-4 mt-3\">", "</div>", [_vm._ssrNode("<div class=\"-mx-4 my-2 text-sm font-bold uppercase p-4 pb-2 pt-0 flex border-b justify-between items-center\">", "</div>", [_vm._ssrNode("<div class=\"flex space-x-1 underline\">", "</div>", _vm._l(_vm.alphabet, function (item) {
-    return _c('nuxt-link', {
-      key: item,
-      attrs: {
-        "to": `/?start=${item}`
-      }
-    }, [_vm._v(_vm._s(item) + "\n        ")]);
-  }), 1), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"flex space-x-2\">", "</div>", [_vm.response.previous !== null ? _c('nuxt-link', {
+  }), _vm._ssrNode(" <span>Filter</span>")], 2)])], 2), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"border px-4 mt-3\">", "</div>", [_vm._ssrNode("<div class=\"-mx-4 my-2 text-sm font-bold uppercase p-4 pb-2 pt-0 flex border-b justify-between items-center\">", "</div>", [_vm._ssrNode("<div class=\"md:flex gap-1 underline\">", "</div>", _vm._l(_vm.alphabet, function (x, i) {
+    return _vm._ssrNode("<div class=\"flex gap-1\">", "</div>", _vm._l(x, function (item) {
+      return _c('nuxt-link', {
+        key: item,
+        attrs: {
+          "to": `/?start=${item}`
+        }
+      }, [_vm._v(_vm._s(item) + "\n          ")]);
+    }), 1);
+  }), 0), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"flex space-x-2\">", "</div>", [_vm.response.previous !== null ? _c('nuxt-link', {
     staticClass: "p-1 border cursor-pointer",
     attrs: {
       "to": _vm.response.previous
@@ -54,7 +56,7 @@ var render = function render() {
       },
       expression: "sort.name"
     }
-  }), _vm._ssrNode(" <span>Name</span>")], 2), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"md:flex sort w-24 hidden justify-end\">", "</div>", [_c('sort', {
+  }), _vm._ssrNode(" <span>Name</span>")], 2), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"flex sort w-24 justify-end\">", "</div>", [_c('sort', {
     model: {
       value: _vm.sort.current_price,
       callback: function ($$v) {
@@ -103,7 +105,7 @@ var render = function render() {
     attrs: {
       "name": "chv-right"
     }
-  })], 1) : _vm._e()], 2)], 2)], 2), _vm._ssrNode(" "), _vm.$route.path === '/' && _vm.reports.length ? _vm._ssrNode("<div class=\"border hidden md:block p-4 mt-3\">", "</div>", [_c('client-only', [_c('calendar-heatmap', {
+  })], 1) : _vm._e()], 2)], 2)], 2), _vm._ssrNode(" "), _vm.$route.path === '/' && _vm.reports.length ? _vm._ssrNode("<div class=\"border p-4 mt-3\">", "</div>", [_c('client-only', [_c('calendar-heatmap', {
     attrs: {
       "tooltipUnit": "minted",
       "values": _vm.reports,
@@ -114,7 +116,7 @@ var render = function render() {
 
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=238f61c4&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=6838b3ce&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/helpers/Utils/Sort.vue?vue&type=template&id=55bef5b6&scoped=true&
 var Sortvue_type_template_id_55bef5b6_scoped_true_render = function render() {
@@ -232,27 +234,27 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var Sort = (component.exports);
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=template&id=38873f21&
-var ProjectCardvue_type_template_id_38873f21_render = function render() {
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=template&id=03bf2f94&
+var ProjectCardvue_type_template_id_03bf2f94_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
   return _c('div', {
-    staticClass: "p-4 py-2 -mx-4 flex space-x-4 items-center hover:bg-gray-100 duration-300 border-t"
-  }, [_vm._ssrNode("<div class=\"flex-1\">", "</div>", [_vm._ssrNode("<h4 class=\"font-bold leading-none\">", "</h4>", [_c('nuxt-link', {
+    staticClass: "p-4 py-2 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 border-t"
+  }, [_vm._ssrNode("<div class=\"flex-1 relative\">", "</div>", [_vm._ssrNode("<div class=\"absolute inset-0 flex items-center\">", "</div>", [_vm._ssrNode("<h4 class=\"font-bold leading-none limit\">", "</h4>", [_c('nuxt-link', {
     attrs: {
       "to": `/${_vm.value.id}-${_vm.value.name}.eth`
     }
-  }, [_vm._v(_vm._s(_vm.value.name) + ".eth")])], 1)]), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"w-24 flex space-x-1 items-center justify-end\">", "</div>", [_vm._ssrNode("<span>" + _vm._ssrEscape(_vm._s(_vm.formatPrice)) + "</span> "), _c('icon', {
+  }, [_vm._v(_vm._s(_vm.value.name) + ".eth")])], 1)])]), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"w-24 flex space-x-1 items-center justify-end\">", "</div>", [_vm._ssrNode("<span>" + _vm._ssrEscape(_vm._s(_vm.formatPrice)) + "</span> "), _c('icon', {
     attrs: {
       "name": "eth"
     }
-  })], 2), _vm._ssrNode(" <div class=\"w-24 hidden md:block text-right\">" + _vm._ssrEscape("\n    " + _vm._s(_vm.formatDateMint) + "\n  ") + "</div> <div class=\"w-24 text-right flex justify-end items-center space-x-2\">" + _vm._ssrEscape("\n    " + _vm._s(_vm.formatDate) + "\n  ") + "</div>")], 2);
+  })], 2), _vm._ssrNode(" <div class=\"w-24 hidden md:block text-right text-xs\"><div class=\"font-bold\">" + _vm._ssrEscape(_vm._s(_vm.mintDate.toLocaleDateString())) + "</div> <div class=\"text-gray-500\">" + _vm._ssrEscape(_vm._s(_vm.mintDate.toLocaleTimeString())) + "</div></div> <div class=\"w-24 text-right text-xs\"><div class=\"font-bold\">" + _vm._ssrEscape(_vm._s(_vm.expiredDate.toLocaleDateString())) + "</div> <div class=\"text-gray-500\">" + _vm._ssrEscape(_vm._s(_vm.expiredDate.toLocaleTimeString())) + "</div></div>")], 2);
 };
 
-var ProjectCardvue_type_template_id_38873f21_staticRenderFns = [];
+var ProjectCardvue_type_template_id_03bf2f94_staticRenderFns = [];
 
-// CONCATENATED MODULE: ./components/partials/ProjectCard.vue?vue&type=template&id=38873f21&
+// CONCATENATED MODULE: ./components/partials/ProjectCard.vue?vue&type=template&id=03bf2f94&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=script&lang=js&
 const web3 = __webpack_require__(10);
@@ -270,18 +272,12 @@ const web3 = __webpack_require__(10);
       return (+web3.utils.fromWei(Number.parseInt(this.value.current_price).toString())).toFixed(5);
     },
 
-    formatDate() {
-      const date = new Date(this.value.expired_date);
-      return date.toLocaleDateString();
+    expiredDate() {
+      return new Date(this.value.expired_date);
     },
 
-    formatDateMint() {
-      if (this.value.mint_date) {
-        const date = new Date(this.value.mint_date);
-        return date.toLocaleDateString();
-      } else {
-        return '_';
-      }
+    mintDate() {
+      return new Date(this.value.mint_date);
     }
 
   }
@@ -298,8 +294,8 @@ const web3 = __webpack_require__(10);
 
 var ProjectCard_component = Object(componentNormalizer["a" /* default */])(
   partials_ProjectCardvue_type_script_lang_js_,
-  ProjectCardvue_type_template_id_38873f21_render,
-  ProjectCardvue_type_template_id_38873f21_staticRenderFns,
+  ProjectCardvue_type_template_id_03bf2f94_render,
+  ProjectCardvue_type_template_id_03bf2f94_staticRenderFns,
   false,
   null,
   null,
@@ -321,7 +317,7 @@ var ProjectCard_component = Object(componentNormalizer["a" /* default */])(
   data() {
     return {
       today: new Date().toISOString().split("T")[0],
-      alphabet: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
+      alphabet: [["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"], ["N", "O", "P", "Q", "R", "U", "V", "W", "X", "Y", "Z", "S", "T"]],
       showFilter: false,
       display: [],
       text: "",

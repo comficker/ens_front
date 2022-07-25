@@ -293,3 +293,10 @@ input:checked ~ .dot {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.limit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}

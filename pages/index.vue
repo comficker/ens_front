@@ -19,12 +19,14 @@
     </div>
     <div class="border px-4 mt-3">
       <div class="-mx-4 my-2 text-sm font-bold uppercase p-4 pb-2 pt-0 flex border-b justify-between items-center">
-        <div class="flex space-x-1 underline">
-          <nuxt-link
-            v-for="item in alphabet" :key="item"
-            :to="`/?start=${item}`"
-          >{{ item }}
-          </nuxt-link>
+        <div class="md:flex gap-1 underline">
+          <div class="flex gap-1" v-for="(x, i) in alphabet" :key="i">
+            <nuxt-link
+              v-for="item in x" :key="item"
+              :to="`/?start=${item}`"
+            >{{ item }}
+            </nuxt-link>
+          </div>
         </div>
         <div class="flex space-x-2">
           <nuxt-link v-if="response.previous !== null" :to="response.previous" class="p-1 border cursor-pointer">
@@ -40,7 +42,7 @@
           <sort v-model="sort.name"/>
           <span>Name</span>
         </div>
-        <div class="md:flex sort w-24 hidden justify-end">
+        <div class="flex sort w-24 justify-end">
           <sort v-model="sort.current_price"/>
           <span>Price</span>
         </div>
@@ -67,7 +69,7 @@
         </div>
       </div>
     </div>
-    <div v-if="$route.path === '/' && reports.length" class="border hidden md:block p-4 mt-3">
+    <div v-if="$route.path === '/' && reports.length" class="border p-4 mt-3">
       <client-only>
         <calendar-heatmap tooltipUnit="minted" :values="reports" :endDate="reports[reports.length - 1].date"/>
       </client-only>
@@ -86,9 +88,8 @@ export default {
     return {
       today: new Date().toISOString().split("T")[0],
       alphabet: [
-        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
-        "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
-        "W", "X", "Y", "Z"
+        ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"],
+        ["N", "O", "P", "Q", "R", "U", "V", "W", "X", "Y", "Z", "S", "T",]
       ],
       showFilter: false,
       display: [],
