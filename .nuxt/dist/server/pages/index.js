@@ -8,7 +8,7 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=6f0c215c&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=238f61c4&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -103,7 +103,7 @@ var render = function render() {
     attrs: {
       "name": "chv-right"
     }
-  })], 1) : _vm._e()], 2)], 2)], 2), _vm._ssrNode(" "), _vm.$route.path === '/' && _vm.reports.length ? _vm._ssrNode("<div class=\"border p-4 mt-3\">", "</div>", [_c('client-only', [_c('calendar-heatmap', {
+  })], 1) : _vm._e()], 2)], 2)], 2), _vm._ssrNode(" "), _vm.$route.path === '/' && _vm.reports.length ? _vm._ssrNode("<div class=\"border hidden md:block p-4 mt-3\">", "</div>", [_c('client-only', [_c('calendar-heatmap', {
     attrs: {
       "tooltipUnit": "minted",
       "values": _vm.reports,
@@ -114,7 +114,7 @@ var render = function render() {
 
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=6f0c215c&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=238f61c4&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/helpers/Utils/Sort.vue?vue&type=template&id=55bef5b6&scoped=true&
 var Sortvue_type_template_id_55bef5b6_scoped_true_render = function render() {
@@ -356,6 +356,7 @@ var ProjectCard_component = Object(componentNormalizer["a" /* default */])(
 
   computed: {
     response() {
+      const toDay = new Date();
       return this.$store.state.data.response;
     }
 
