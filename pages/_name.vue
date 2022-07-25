@@ -11,7 +11,7 @@
         </div>
         <div class="md:py-2">
           <h4 class="text-xs uppercase">Born</h4>
-          <div class="text-2xl font-mono font-semibold">{{ formatDate }}</div>
+          <div class="text-2xl font-mono font-semibold">{{ formatDateMint }}</div>
         </div>
         <div class="md:py-2">
           <h4 class="text-xs uppercase">Expired</h4>
@@ -60,7 +60,7 @@
           </th>
           <th scope="col" class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">Price
           </th>
-          <th scope="col" class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">From
+          <th scope="col" class="hidden md:table-cell px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">From
           </th>
           <th scope="col" class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">To</th>
           <th scope="col" class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">Date
@@ -76,7 +76,7 @@
               <span>{{ displayPrice(row.price) }}</span>
             </div>
           </td>
-          <td class="whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{ normalizeAdd(row.fr) }}</td>
+          <td class="hidden md:table-cell whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{ normalizeAdd(row.fr) }}</td>
           <td class="whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{ normalizeAdd(row.to) }}</td>
           <td class="whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{ row.timestamp }}</td>
         </tr>
@@ -102,6 +102,10 @@ export default {
     },
     formatDate() {
       const date = new Date(this.value.expired_date)
+      return date.toLocaleDateString()
+    },
+    formatDateMint() {
+      const date = new Date(this.value.mint_date)
       return date.toLocaleDateString()
     },
     rows() {

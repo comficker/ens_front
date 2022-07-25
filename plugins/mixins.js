@@ -72,9 +72,9 @@ Vue.mixin({
     },
     normalizeAdd(add) {
       if (add) {
-        return `${add.substr(0, 5)}...${add.substr(35, 42)}`
+        return `${add.substr(0, 3)}...${add.substr(39, 42)}`
       }
-      return "0x000...0000"
+      return "0x0...000"
     },
     displayPrice(val) {
       return (+web3.utils.fromWei(Number.parseInt(val).toString())).toFixed(5)

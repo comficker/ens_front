@@ -67,9 +67,9 @@
         </div>
       </div>
     </div>
-    <div v-if="$route.path === '/'" class="border p-4 mt-3">
+    <div v-if="$route.path === '/' && reports.length" class="border p-4 mt-3">
       <client-only>
-        <calendar-heatmap tooltipUnit="minted" :values="reports" :endDate="today"/>
+        <calendar-heatmap tooltipUnit="minted" :values="reports" :endDate="reports[reports.length - 1].date"/>
       </client-only>
     </div>
   </div>
