@@ -7,20 +7,23 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         <div class="md:py-2">
           <h4 class="text-xs uppercase">Price</h4>
-          <div class="text-2xl font-mono font-semibold">{{ formatPrice }}</div>
+          <div class="text-3xl flex items-center space-x-1 font-mono font-semibold text-green-500 fill-green-500">
+            <span>{{ formatPrice }}</span>
+            <icon class="lg" name="eth"></icon>
+          </div>
         </div>
         <div class="md:py-2">
           <h4 class="text-xs uppercase">Born</h4>
           <div class="text-lg font-mono font-semibold">
             <div>{{ formatDateMint.toLocaleDateString() }}</div>
-            <div class="text-xs">{{ formatDateMint.toLocaleTimeString() }}</div>
+            <div class="text-xs text-gray-500">{{ formatDateMint.toLocaleTimeString() }}</div>
           </div>
         </div>
         <div class="md:py-2">
           <h4 class="text-xs uppercase">Expired</h4>
-          <div class="text-2xl font-mono font-semibold">
+          <div class="text-lg font-mono font-semibold">
             <div>{{ formatDate.toLocaleDateString() }}</div>
-            <div class="text-xs">{{ formatDate.toLocaleTimeString() }}</div>
+            <div class="text-xs text-gray-500">{{ formatDate.toLocaleTimeString() }}</div>
           </div>
         </div>
       </div>
