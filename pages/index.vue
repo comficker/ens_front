@@ -22,6 +22,7 @@
         <div class="md:flex gap-1 underline">
           <div class="flex gap-1" v-for="(x, i) in alphabet" :key="i">
             <nuxt-link
+              class="w-6 h-6 md:w-3 md:h-3"
               v-for="item in x" :key="item"
               :to="`/?start=${item}`"
             >{{ item }}
