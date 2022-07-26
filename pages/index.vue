@@ -18,18 +18,18 @@
       </div>
     </div>
     <div class="border px-4 mt-3">
-      <div class="-mx-4 my-2 text-sm font-bold uppercase p-4 pb-2 pt-0 flex border-b justify-between items-center">
-        <div class="md:flex gap-1 underline">
+      <div class="-mx-4 my-2 text-sm font-bold uppercase p-4 pb-2 pt-0 border-b justify-between items-center">
+        <div class="md:flex gap-1 underline text-center">
           <div class="flex gap-1" v-for="(x, i) in alphabet" :key="i">
             <nuxt-link
-              class="w-6 h-6 md:w-3 md:h-3"
+              class="block w-5 h-6 md:w-3 md:h-3"
               v-for="item in x" :key="item"
               :to="`/?start=${item}`"
             >{{ item }}
             </nuxt-link>
           </div>
         </div>
-        <div class="flex space-x-2">
+        <div class="hidden md:flex space-x-2">
           <nuxt-link v-if="response.previous !== null" :to="response.previous" class="p-1 border cursor-pointer">
             <icon name="chv-left"/>
           </nuxt-link>

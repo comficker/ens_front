@@ -8,7 +8,7 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=309ab2b4&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=11fabfcf&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -21,17 +21,17 @@ var render = function render() {
     attrs: {
       "name": "sort"
     }
-  }), _vm._ssrNode(" <span>Filter</span>")], 2)])], 2), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"border px-4 mt-3\">", "</div>", [_vm._ssrNode("<div class=\"-mx-4 my-2 text-sm font-bold uppercase p-4 pb-2 pt-0 flex border-b justify-between items-center\">", "</div>", [_vm._ssrNode("<div class=\"md:flex gap-1 underline\">", "</div>", _vm._l(_vm.alphabet, function (x, i) {
+  }), _vm._ssrNode(" <span>Filter</span>")], 2)])], 2), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"border px-4 mt-3\">", "</div>", [_vm._ssrNode("<div class=\"-mx-4 my-2 text-sm font-bold uppercase p-4 pb-2 pt-0 border-b justify-between items-center\">", "</div>", [_vm._ssrNode("<div class=\"md:flex gap-1 underline text-center\">", "</div>", _vm._l(_vm.alphabet, function (x, i) {
     return _vm._ssrNode("<div class=\"flex gap-1\">", "</div>", _vm._l(x, function (item) {
       return _c('nuxt-link', {
         key: item,
-        staticClass: "w-6 h-6 md:w-3 md:h-3",
+        staticClass: "block w-5 h-6 md:w-3 md:h-3",
         attrs: {
           "to": `/?start=${item}`
         }
       }, [_vm._v(_vm._s(item) + "\n          ")]);
     }), 1);
-  }), 0), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"flex space-x-2\">", "</div>", [_vm.response.previous !== null ? _c('nuxt-link', {
+  }), 0), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"hidden md:flex space-x-2\">", "</div>", [_vm.response.previous !== null ? _c('nuxt-link', {
     staticClass: "p-1 border cursor-pointer",
     attrs: {
       "to": _vm.response.previous
@@ -117,7 +117,7 @@ var render = function render() {
 
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=309ab2b4&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=11fabfcf&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/helpers/Utils/Sort.vue?vue&type=template&id=55bef5b6&scoped=true&
 var Sortvue_type_template_id_55bef5b6_scoped_true_render = function render() {
