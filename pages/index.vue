@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="border px-4 mt-3">
-      <div class="-mx-4 my-2 text-sm font-bold uppercase p-4 pb-2 pt-0 border-b justify-between items-center">
+      <div class="-mx-4 my-2 text-sm font-bold uppercase flex p-4 pb-2 pt-0 border-b justify-between items-center">
         <div class="md:flex gap-1 underline text-center">
           <div class="flex gap-1" v-for="(x, i) in alphabet" :key="i">
             <nuxt-link
