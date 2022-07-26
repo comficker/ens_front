@@ -8,7 +8,7 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=37374afc&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=fd195db0&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
@@ -106,18 +106,12 @@ var render = function render() {
     attrs: {
       "name": "chv-right"
     }
-  })], 1) : _vm._e()], 2)], 2)], 2), _vm._ssrNode(" "), _vm.$route.path === '/' && _vm.reports.length ? _vm._ssrNode("<div class=\"border p-4 mt-3\">", "</div>", [_c('client-only', [_c('calendar-heatmap', {
-    attrs: {
-      "tooltipUnit": "minted",
-      "values": _vm.reports,
-      "endDate": _vm.reports[_vm.reports.length - 1].date
-    }
-  })], 1)], 1) : _vm._e()], 2);
+  })], 1) : _vm._e()], 2)], 2)], 2)], 2);
 };
 
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=37374afc&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=fd195db0&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/helpers/Utils/Sort.vue?vue&type=template&id=55bef5b6&scoped=true&
 var Sortvue_type_template_id_55bef5b6_scoped_true_render = function render() {
@@ -335,20 +329,19 @@ var ProjectCard_component = Object(componentNormalizer["a" /* default */])(
     };
   },
 
-  async fetch() {
-    this.reports = await this.$axios.$get('/reports/', {
-      params: {
-        page_size: 360,
-        end: this.today
-      }
-    }).then(res => {
-      return res.results.map(x => {
-        return {
-          date: x.created,
-          count: x.minted
-        };
-      });
-    });
+  async fetch() {// this.reports = await this.$axios.$get('/reports/', {
+    //   params: {
+    //     page_size: 360,
+    //     end: this.today
+    //   }
+    // }).then(res => {
+    //   return res.results.map(x => {
+    //     return {
+    //       date: x.created,
+    //       count: x.minted
+    //     }
+    //   })
+    // })
   },
 
   computed: {

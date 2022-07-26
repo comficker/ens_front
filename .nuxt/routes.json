@@ -3,12 +3,14 @@
     "name": "index",
     "path": "/",
     "component": "/Users/hoanganhlam/WebstormProjects/enshunt/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_991f8aa8"
   },
   {
     "name": "name",
     "path": "/:name",
     "component": "/Users/hoanganhlam/WebstormProjects/enshunt/pages/_name.vue",
-    "chunkName": "pages/_name"
+    "chunkName": "pages/_name",
+    "_name": "_56ac3944"
   }
 ]

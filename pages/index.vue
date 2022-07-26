@@ -70,11 +70,6 @@
         </div>
       </div>
     </div>
-    <div v-if="$route.path === '/' && reports.length" class="border p-4 mt-3">
-      <client-only>
-        <calendar-heatmap tooltipUnit="minted" :values="reports" :endDate="reports[reports.length - 1].date"/>
-      </client-only>
-    </div>
   </div>
 </template>
 
@@ -108,19 +103,19 @@ export default {
     }
   },
   async fetch() {
-    this.reports = await this.$axios.$get('/reports/', {
-      params: {
-        page_size: 360,
-        end: this.today
-      }
-    }).then(res => {
-      return res.results.map(x => {
-        return {
-          date: x.created,
-          count: x.minted
-        }
-      })
-    })
+    // this.reports = await this.$axios.$get('/reports/', {
+    //   params: {
+    //     page_size: 360,
+    //     end: this.today
+    //   }
+    // }).then(res => {
+    //   return res.results.map(x => {
+    //     return {
+    //       date: x.created,
+    //       count: x.minted
+    //     }
+    //   })
+    // })
   },
   computed: {
     response() {
