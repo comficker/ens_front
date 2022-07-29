@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto">
+  <div class="max-w-4xl mx-auto my-4">
     <div class="flex gap-4">
       <div class="flex items-center gap-3">
         <div class="w-3 h-3 flex items-center justify-center rounded-full bg-green-400">
@@ -59,6 +59,7 @@
       <project-card v-for="item in response.results" :key="item.id" :value="item"/>
       <div class="-mx-4 my-2 text-sm font-bold uppercase p-4 pb-0 pt-2 flex border-t justify-between items-center">
         <div class="flex space-x-1 underline">
+          total: {{ response.count }}
         </div>
         <div class="flex space-x-2">
           <nuxt-link v-if="response.previous !== null" :to="response.previous" class="p-1 border cursor-pointer">

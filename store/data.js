@@ -33,7 +33,9 @@ export default {
         commit('SET_RESPONSE', res);
       }
       const title = kwargs.params.name ? `${res.name}.eth` : "ENSHunt - Ethereum Name Service";
-      const description = kwargs.params.name ? res.desc : "Find the best coin to invest";
+      const description = kwargs.params.name ?
+        `${res.name}.eth registered by ${res.owner} in ${ new Date(res.expired_date).toLocaleString()} and will be expired in ${new Date(res.mint_date).toLocaleString()}`
+        : "Find the best ENS domain to collect and invest";
       commit('config/SET_META', {
         title: title,
         description: description,

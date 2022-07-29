@@ -8,13 +8,13 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=fd195db0&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=af765676&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
   return _c('div', {
-    staticClass: "max-w-4xl mx-auto"
+    staticClass: "max-w-4xl mx-auto my-4"
   }, [_vm._ssrNode("<div class=\"flex gap-4\">", "</div>", [_vm._ssrNode("<div class=\"flex items-center gap-3\"><div class=\"w-3 h-3 flex items-center justify-center rounded-full bg-green-400\"><div class=\"animate-ping w-3 h-3 rounded-full bg-green-400\"></div></div> <h2 class=\"text-lg font-semibold\">Live</h2> <span class=\"p-0.5 px-2 font-bold rounded text-xs bg-green-300\">minting</span></div> <div class=\"flex-1\"></div> "), _vm._ssrNode("<div class=\"flex space-x-4\">", "</div>", [_vm._ssrNode("<div" + _vm._ssrClass("btn", {
     'active': _vm.showFilter
   }) + ">", "</div>", [_c('icon', {
@@ -88,7 +88,7 @@ var render = function render() {
         "value": item
       }
     });
-  }), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"-mx-4 my-2 text-sm font-bold uppercase p-4 pb-0 pt-2 flex border-t justify-between items-center\">", "</div>", [_vm._ssrNode("<div class=\"flex space-x-1 underline\"></div> "), _vm._ssrNode("<div class=\"flex space-x-2\">", "</div>", [_vm.response.previous !== null ? _c('nuxt-link', {
+  }), _vm._ssrNode(" "), _vm._ssrNode("<div class=\"-mx-4 my-2 text-sm font-bold uppercase p-4 pb-0 pt-2 flex border-t justify-between items-center\">", "</div>", [_vm._ssrNode("<div class=\"flex space-x-1 underline\">" + _vm._ssrEscape("\n        total: " + _vm._s(_vm.response.count) + "\n      ") + "</div> "), _vm._ssrNode("<div class=\"flex space-x-2\">", "</div>", [_vm.response.previous !== null ? _c('nuxt-link', {
     staticClass: "p-1 border cursor-pointer",
     attrs: {
       "to": _vm.response.previous
@@ -111,7 +111,7 @@ var render = function render() {
 
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=fd195db0&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=af765676&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/helpers/Utils/Sort.vue?vue&type=template&id=55bef5b6&scoped=true&
 var Sortvue_type_template_id_55bef5b6_scoped_true_render = function render() {
@@ -229,14 +229,14 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var Sort = (component.exports);
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=template&id=03bf2f94&
-var ProjectCardvue_type_template_id_03bf2f94_render = function render() {
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=template&id=91f5797c&
+var ProjectCardvue_type_template_id_91f5797c_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
   return _c('div', {
     staticClass: "p-4 py-2 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 border-t"
-  }, [_vm._ssrNode("<div class=\"flex-1 relative\">", "</div>", [_vm._ssrNode("<div class=\"absolute inset-0 flex items-center\">", "</div>", [_vm._ssrNode("<h4 class=\"font-bold leading-none limit\">", "</h4>", [_c('nuxt-link', {
+  }, [_vm._ssrNode("<div class=\"flex-1 relative\">", "</div>", [_vm._ssrNode("<div class=\"absolute inset-0 flex items-center\">", "</div>", [_vm._ssrNode("<h4 class=\"font-bold leading-none limit text-xl\">", "</h4>", [_c('nuxt-link', {
     attrs: {
       "to": `/${_vm.value.id}-${_vm.value.name}.eth`
     }
@@ -247,9 +247,9 @@ var ProjectCardvue_type_template_id_03bf2f94_render = function render() {
   })], 2), _vm._ssrNode(" <div class=\"w-24 hidden md:block text-right text-xs\"><div class=\"font-bold\">" + _vm._ssrEscape(_vm._s(_vm.mintDate.toLocaleDateString())) + "</div> <div class=\"text-gray-500\">" + _vm._ssrEscape(_vm._s(_vm.mintDate.toLocaleTimeString())) + "</div></div> <div class=\"w-24 text-right text-xs\"><div class=\"font-bold\">" + _vm._ssrEscape(_vm._s(_vm.expiredDate.toLocaleDateString())) + "</div> <div class=\"text-gray-500\">" + _vm._ssrEscape(_vm._s(_vm.expiredDate.toLocaleTimeString())) + "</div></div>")], 2);
 };
 
-var ProjectCardvue_type_template_id_03bf2f94_staticRenderFns = [];
+var ProjectCardvue_type_template_id_91f5797c_staticRenderFns = [];
 
-// CONCATENATED MODULE: ./components/partials/ProjectCard.vue?vue&type=template&id=03bf2f94&
+// CONCATENATED MODULE: ./components/partials/ProjectCard.vue?vue&type=template&id=91f5797c&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=script&lang=js&
 const web3 = __webpack_require__(10);
@@ -289,8 +289,8 @@ const web3 = __webpack_require__(10);
 
 var ProjectCard_component = Object(componentNormalizer["a" /* default */])(
   partials_ProjectCardvue_type_script_lang_js_,
-  ProjectCardvue_type_template_id_03bf2f94_render,
-  ProjectCardvue_type_template_id_03bf2f94_staticRenderFns,
+  ProjectCardvue_type_template_id_91f5797c_render,
+  ProjectCardvue_type_template_id_91f5797c_staticRenderFns,
   false,
   null,
   null,

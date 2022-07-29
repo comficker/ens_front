@@ -12,22 +12,24 @@
           <span>Hunt</span>
         </nuxt-link>
       </div>
-      <div class="flex flex-1">
-        <input v-model="name" class="border border-r-0 outline-none p-2 w-full" type="text" placeholder="Search">
-        <div class="btn pri" @click="search()">
-          <icon name="search"></icon>
-        </div>
-      </div>
-      <div class="flex">
-        <client-only>
-          <div class="p-2 px-3 flex space-x-2 items-center cursor-pointer border" @click="login()">
-            <icon class="md" name="user"/>
-            <span class="font-bold">{{ getUserName }}</span>
-            <div v-if="loggedIn" class="border-l pl-1" @click="logout()">
-              <icon name="close"></icon>
-            </div>
+      <div class="flex gap-4 text-xl">
+        <div class="flex">
+          <input v-model="name" class="border border-r-0 outline-none p-3 w-full" type="text" placeholder="Search">
+          <div class="btn xl pri" @click="search()">
+            <icon name="search"></icon>
           </div>
-        </client-only>
+        </div>
+        <div class="flex">
+          <client-only>
+            <div class="p-3 px-4 flex space-x-2 items-center cursor-pointer border" @click="login()">
+              <icon class="md" name="user"/>
+              <span class="font-bold">{{ getUserName }}</span>
+              <div v-if="loggedIn" class="border-l pl-1" @click="logout()">
+                <icon name="close"></icon>
+              </div>
+            </div>
+          </client-only>
+        </div>
       </div>
     </div>
   </header>

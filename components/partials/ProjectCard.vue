@@ -2,7 +2,7 @@
   <div class="p-4 py-2 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 border-t">
     <div class="flex-1 relative">
       <div class="absolute inset-0 flex items-center">
-        <h4 class="font-bold leading-none limit">
+        <h4 class="font-bold leading-none limit text-xl">
           <nuxt-link :to="`/${value.id}-${value.name}.eth`">{{ value.name }}.eth</nuxt-link>
         </h4>
       </div>
