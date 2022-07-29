@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto my-4">
+  <div class="max-w-4xl mx-auto">
     <div class="flex gap-4">
       <div class="flex items-center gap-3">
         <div class="w-3 h-3 flex items-center justify-center rounded-full bg-green-400">

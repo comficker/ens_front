@@ -8,13 +8,13 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=af765676&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=30abbe2c&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
   return _c('div', {
-    staticClass: "max-w-4xl mx-auto my-4"
+    staticClass: "max-w-4xl mx-auto"
   }, [_vm._ssrNode("<div class=\"flex gap-4\">", "</div>", [_vm._ssrNode("<div class=\"flex items-center gap-3\"><div class=\"w-3 h-3 flex items-center justify-center rounded-full bg-green-400\"><div class=\"animate-ping w-3 h-3 rounded-full bg-green-400\"></div></div> <h2 class=\"text-lg font-semibold\">Live</h2> <span class=\"p-0.5 px-2 font-bold rounded text-xs bg-green-300\">minting</span></div> <div class=\"flex-1\"></div> "), _vm._ssrNode("<div class=\"flex space-x-4\">", "</div>", [_vm._ssrNode("<div" + _vm._ssrClass("btn", {
     'active': _vm.showFilter
   }) + ">", "</div>", [_c('icon', {
@@ -111,7 +111,7 @@ var render = function render() {
 
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=af765676&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=30abbe2c&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/helpers/Utils/Sort.vue?vue&type=template&id=55bef5b6&scoped=true&
 var Sortvue_type_template_id_55bef5b6_scoped_true_render = function render() {

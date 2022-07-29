@@ -1,34 +1,34 @@
 <template>
-  <div v-if="value" class="max-w-4xl my-4 md:my-6 mx-auto space-y-4 md:space-y-6">
+  <div v-if="value" class="max-w-4xl my-4 mx-auto space-y-4 md:space-y-6">
     <div class="flex items-center gap-3">
       <h1 class="text-5xl limit font-bold">{{ value.name }}.eth</h1>
       <div class="flex space-x-3 items-center">
-        <a :href="`https://etherscan.io/address/${value.owner}`" target="_blank">
-          <img class="w-8 h08" src="/etherscan.svg" alt="">
+        <a ref="nofollow" :href="`https://etherscan.io/address/${value.owner}`" target="_blank">
+          <img class="w-8 h-8" src="/etherscan.svg" alt="">
         </a>
       </div>
     </div>
     <div class="text-xs italic border-t border-dashed pt-3">
       <p>{{ desc }}</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+    <div class="md:-mx-4 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
       <div class="py-2 border p-4 shadow">
         <h4 class="text-xs uppercase">Price</h4>
-        <div class="text-3xl flex items-center space-x-1 font-semibold text-green-500 fill-green-500">
+        <div class="text-3xl flex items-center space-x-1 font-bold text-green-500 fill-green-500">
           <span>{{ formatPrice }}</span>
           <icon class="lg" name="eth"></icon>
         </div>
       </div>
       <div class="py-2 border p-4 shadow">
         <h4 class="text-xs uppercase">Born</h4>
-        <div class="text-lg font-semibold">
+        <div class="text-lg font-bold">
           <div>{{ formatDateMint.toLocaleDateString() }}</div>
           <div class="text-xs text-gray-500">{{ formatDateMint.toLocaleTimeString() }}</div>
         </div>
       </div>
       <div class="py-2 border p-4 shadow">
         <h4 class="text-xs uppercase">Expired</h4>
-        <div class="text-lg font-semibold">
+        <div class="text-lg font-bold">
           <div>{{ formatDate.toLocaleDateString() }}</div>
           <div class="text-xs text-gray-500">{{ formatDate.toLocaleTimeString() }}</div>
         </div>
@@ -69,42 +69,39 @@
       </div>
     </div>
     <div>
-      <table class="min-w-full">
-        <thead class="bg-gray-50">
-        <tr>
-          <th scope="col"
-              class="py-3 pl-4 pr-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500 sm:pl-6">Event
-          </th>
-          <th scope="col" class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">Price
-          </th>
-          <th scope="col"
-              class="hidden md:table-cell px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">
-            From
-          </th>
-          <th scope="col" class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">To</th>
-          <th scope="col" class="px-3 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">Date
+      <table class="min-w-full text-gray-500">
+        <thead class="font-medium uppercase">
+        <tr class="border-b border-dashed text-xs">
+          <th scope="col" class="py-2 text-left tracking-wide">Event</th>
+          <th scope="col" class="px-3 py-2 text-left tracking-wide">Price</th>
+          <th scope="col" class="px-3 py-2 text-left tracking-wide hidden md:table-cell">From</th>
+          <th scope="col" class="px-3 py-2 text-left tracking-wide">To</th>
+          <th scope="col" class="py-2 text-left tracking-wide">Date
           </th>
         </tr>
         </thead>
         <tbody class="divide-y divide-gray-200 bg-white">
         <tr v-for="row in value.transactions" :key="row.id">
-          <td class="whitespace-nowrap py-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
-            {{ row.event_name || 'minted' }}
+          <td class="whitespace-nowrap py-2 font-medium">
+            <div class="flex space-x-1 capitalize">
+              <icon :name="row.event_name"/>
+              <span>{{ row.event_name || 'minted' }}</span>
+            </div>
           </td>
-          <td class="whitespace-nowrap py-2 px-3 text-sm text-gray-500">
+          <td class="whitespace-nowrap py-2 px-3">
             <div class="flex space-x-1 items-center">
               <icon name="eth"></icon>
               <span>{{ displayPrice(row.price) }}</span>
             </div>
           </td>
-          <td class="hidden md:table-cell whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{
+          <td class="whitespace-nowrap py-2 px-3 hidden md:table-cell ">{{
               normalizeAdd(row.fr)
             }}
           </td>
-          <td class="whitespace-nowrap py-2 px-3 text-sm text-gray-500">{{ normalizeAdd(row.to) }}</td>
-          <td class="whitespace-nowrap py-2 px-3 text-gray-500 text-xs">
+          <td class="whitespace-nowrap py-2 px-3">{{ normalizeAdd(row.to) }}</td>
+          <td class="whitespace-nowrap py-2">
             <div class="font-bold">{{ new Date(row.timestamp).toLocaleDateString() }}</div>
-            <div class="text-gray-500">{{ new Date(row.timestamp).toLocaleTimeString() }}</div>
+            <div class="text-gray-500 text-xs">{{ new Date(row.timestamp).toLocaleTimeString() }}</div>
           </td>
         </tr>
         </tbody>

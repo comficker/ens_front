@@ -1,12 +1,21 @@
 <template>
   <footer class="py-4">
-    <div class="max-w-4xl mx-auto flex md:flex-row flex-col justify-between">
-      <p class="text-gray-500 text-sm text-center md:text-left mb-2 md:mb-0">Copyright © 2021 ENSHunt.com.</p>
-      <div class="flex space-x-4 md:justify-right justify-center">
+    <div class="max-w-4xl mx-auto flex flex-col justify-between">
+      <div class="flex gap-4 justify-center mb-3">
+        <a target="_blank" class="flex space-x-2 text-xs uppercase text-gray-400" href="#">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="#81858F">
+            <path
+              d="M19.9604 2.10527C19.9446 2.03147 19.9095 1.96321 19.8585 1.90759C19.8075 1.85198 19.7425 1.81104 19.6704 1.78902C19.4075 1.73662 19.1355 1.75605 18.8829 1.84527C18.8829 1.84527 1.35906 8.14277 0.357815 8.84027C0.142815 8.99152 0.0703149 9.07777 0.0340649 9.18027C-0.138435 9.68027 0.400315 9.89652 0.400315 9.89652L4.91656 11.3678C4.99282 11.3815 5.07126 11.3768 5.14531 11.354C6.17281 10.7053 15.4829 4.82652 16.0204 4.62902C16.1054 4.60402 16.1679 4.62902 16.1454 4.69027C15.9304 5.44027 7.88781 12.589 7.84406 12.6328C7.82272 12.6506 7.806 12.6733 7.79534 12.699C7.78467 12.7247 7.78037 12.7526 7.78281 12.7803L7.36156 17.1902C7.36156 17.1902 7.18406 18.5652 8.55656 17.1902C9.53031 16.2165 10.4653 15.409 10.9316 15.0177C12.4841 16.0902 14.1554 17.2752 14.8766 17.8927C14.9974 18.0104 15.1406 18.1024 15.2979 18.1631C15.4551 18.224 15.6231 18.2522 15.7916 18.2465C15.999 18.2209 16.1937 18.1327 16.3501 17.994C16.5064 17.8551 16.6167 17.672 16.6666 17.469C16.6666 17.469 19.8679 4.62527 19.9741 2.89652C19.9841 2.72777 20.0004 2.62527 20.0004 2.50027C20.0049 2.3674 19.9914 2.23453 19.9604 2.10527Z"></path>
+          </svg>
+        </a>
+        <a target="_blank" class="flex space-x-2 text-xs uppercase text-gray-400" href="#">
+          <icon name="tw"/>
+        </a>
         <a target="_blank" class="flex space-x-2 text-xs uppercase text-gray-400" href="/sitemap_index.xml">
-          <span>Sitemap</span>
+          <icon name="sitemap"/>
         </a>
       </div>
+      <p class="text-gray-500 text-sm text-center">Copyright © 2021 ENSHunt.com.</p>
     </div>
   </footer>
 </template>
