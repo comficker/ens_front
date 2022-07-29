@@ -8,36 +8,36 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/_name.vue?vue&type=template&id=04ae9f7e&scoped=true&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./pages/_name.vue?vue&type=template&id=8ac6732c&scoped=true&
 var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
   return _vm.value ? _c('div', {
     staticClass: "max-w-4xl my-4 mx-auto space-y-4 md:space-y-6"
-  }, [_vm._ssrNode("<div class=\"flex items-center gap-3\" data-v-04ae9f7e><h1 class=\"text-5xl limit font-bold\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.value.name) + ".eth") + "</h1> <div class=\"flex space-x-3 items-center\" data-v-04ae9f7e><a" + _vm._ssrAttr("href", `https://etherscan.io/address/${_vm.value.owner}`) + " target=\"_blank\" data-v-04ae9f7e><img src=\"/etherscan.svg\" alt class=\"w-8 h-8\" data-v-04ae9f7e></a></div></div> <div class=\"text-xs italic border-t border-dashed pt-3\" data-v-04ae9f7e><p data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.desc)) + "</p></div> "), _vm._ssrNode("<div class=\"md:-mx-4 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6\" data-v-04ae9f7e>", "</div>", [_vm._ssrNode("<div class=\"py-2 border p-4 shadow\" data-v-04ae9f7e>", "</div>", [_vm._ssrNode("<h4 class=\"text-xs uppercase\" data-v-04ae9f7e>Price</h4> "), _vm._ssrNode("<div class=\"text-3xl flex items-center space-x-1 font-bold text-green-500 fill-green-500\" data-v-04ae9f7e>", "</div>", [_vm._ssrNode("<span data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.formatPrice)) + "</span> "), _c('icon', {
+  }, [_vm._ssrNode("<div class=\"flex items-center gap-3\" data-v-8ac6732c><h1 class=\"text-5xl limit font-bold\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.value.name) + ".eth") + "</h1> <div class=\"flex space-x-3 items-center\" data-v-8ac6732c><a" + _vm._ssrAttr("href", `https://etherscan.io/address/${_vm.value.owner}`) + " target=\"_blank\" data-v-8ac6732c><img src=\"/etherscan.svg\" alt class=\"w-8 h-8\" data-v-8ac6732c></a></div></div> <div class=\"text-xs italic border-t border-dashed pt-3\" data-v-8ac6732c><p data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.desc)) + "</p></div> "), _vm._ssrNode("<div class=\"md:-mx-4 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6\" data-v-8ac6732c>", "</div>", [_vm._ssrNode("<div class=\"py-2 border p-4 shadow\" data-v-8ac6732c>", "</div>", [_vm._ssrNode("<h4 class=\"text-xs uppercase\" data-v-8ac6732c>Price</h4> "), _vm._ssrNode("<div class=\"text-3xl flex items-center space-x-1 font-bold text-green-500 fill-green-500\" data-v-8ac6732c>", "</div>", [_vm._ssrNode("<span data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.formatPrice)) + "</span> "), _c('icon', {
     staticClass: "lg",
     attrs: {
       "name": "eth"
     }
-  })], 2)], 2), _vm._ssrNode(" <div class=\"py-2 border p-4 shadow\" data-v-04ae9f7e><h4 class=\"text-xs uppercase\" data-v-04ae9f7e>Born</h4> <div class=\"text-lg font-bold\" data-v-04ae9f7e><div data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.formatDateMint.toLocaleDateString())) + "</div> <div class=\"text-xs text-gray-500\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.formatDateMint.toLocaleTimeString())) + "</div></div></div> <div class=\"py-2 border p-4 shadow\" data-v-04ae9f7e><h4 class=\"text-xs uppercase\" data-v-04ae9f7e>Expired</h4> <div class=\"text-lg font-bold\" data-v-04ae9f7e><div data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.formatDate.toLocaleDateString())) + "</div> <div class=\"text-xs text-gray-500\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.formatDate.toLocaleTimeString())) + "</div></div></div>")], 2), _vm._ssrNode(" <div class=\"space-y-3\" data-v-04ae9f7e><div class=\"space-y-2\" data-v-04ae9f7e><div class=\"flex\" data-v-04ae9f7e><div class=\"w-36 text-xs font-bold\" data-v-04ae9f7e>ID</div> <div class=\"font-mono limit\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.value.item_id)) + "</div></div> <div class=\"flex\" data-v-04ae9f7e><div class=\"w-36 text-xs font-bold\" data-v-04ae9f7e>REGISTRANT</div> <div class=\"font-mono limit\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.value.owner)) + "</div></div> <div class=\"flex\" data-v-04ae9f7e><div class=\"w-36 text-xs font-bold\" data-v-04ae9f7e>CONTROLLER</div> <div class=\"font-mono limit\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.value.owner)) + "</div></div> <div class=\"flex\" data-v-04ae9f7e><div class=\"w-36 text-xs font-bold\" data-v-04ae9f7e>RESOLVER</div> <div class=\"font-mono limit\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.value.owner)) + "</div></div> <div class=\"flex\" data-v-04ae9f7e><div class=\"w-36 text-xs font-bold\" data-v-04ae9f7e>OWNER</div> <div class=\"font-mono limit\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.value.owner)) + "</div></div></div></div> <div class=\"md:-mx-4 p-4 bg-yellow-50 space-y-2 border\" data-v-04ae9f7e><h2 class=\"uppercase text-gray-500 font-bold\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.value.name) + ".eth Metadata") + "</h2> " + _vm._ssrList(Object.keys(_vm.traits), function (item) {
-    return "<div class=\"flex text-xs\" data-v-04ae9f7e><div class=\"w-36 font-bold uppercase\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(item)) + "</div> <div class=\"font-mono limit\" data-v-04ae9f7e>" + (_vm.traits[item] ? "<span data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.traits[item])) + "</span>" : "<span class=\"text-gray-400\" data-v-04ae9f7e>Not set</span>") + "</div></div>";
-  }) + "</div> "), _vm._ssrNode("<div data-v-04ae9f7e>", "</div>", [_vm._ssrNode("<table class=\"min-w-full text-gray-500\" data-v-04ae9f7e>", "</table>", [_vm._ssrNode("<thead class=\"font-medium uppercase\" data-v-04ae9f7e><tr class=\"border-b border-dashed text-xs\" data-v-04ae9f7e><th scope=\"col\" class=\"py-2 text-left tracking-wide\" data-v-04ae9f7e>Event</th> <th scope=\"col\" class=\"px-3 py-2 text-left tracking-wide\" data-v-04ae9f7e>Price</th> <th scope=\"col\" class=\"px-3 py-2 text-left tracking-wide hidden md:table-cell\" data-v-04ae9f7e>From</th> <th scope=\"col\" class=\"px-3 py-2 text-left tracking-wide\" data-v-04ae9f7e>To</th> <th scope=\"col\" class=\"py-2 text-left tracking-wide\" data-v-04ae9f7e>Date\n        </th></tr></thead> "), _vm._ssrNode("<tbody class=\"divide-y divide-gray-200 bg-white\" data-v-04ae9f7e>", "</tbody>", _vm._l(_vm.value.transactions, function (row) {
-    return _vm._ssrNode("<tr data-v-04ae9f7e>", "</tr>", [_vm._ssrNode("<td class=\"whitespace-nowrap py-2 font-medium\" data-v-04ae9f7e>", "</td>", [_vm._ssrNode("<div class=\"flex space-x-1 capitalize\" data-v-04ae9f7e>", "</div>", [_c('icon', {
+  })], 2)], 2), _vm._ssrNode(" <div class=\"py-2 border p-4 shadow\" data-v-8ac6732c><h4 class=\"text-xs uppercase\" data-v-8ac6732c>Born</h4> <div class=\"text-lg font-bold\" data-v-8ac6732c><div data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.formatDateMint.toLocaleDateString())) + "</div> <div class=\"text-xs text-gray-500\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.formatDateMint.toLocaleTimeString())) + "</div></div></div> <div class=\"py-2 border p-4 shadow\" data-v-8ac6732c><h4 class=\"text-xs uppercase\" data-v-8ac6732c>Expired</h4> <div class=\"text-lg font-bold\" data-v-8ac6732c><div data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.formatDate.toLocaleDateString())) + "</div> <div class=\"text-xs text-gray-500\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.formatDate.toLocaleTimeString())) + "</div></div></div>")], 2), _vm._ssrNode(" <div class=\"space-y-3\" data-v-8ac6732c><div class=\"space-y-2\" data-v-8ac6732c><div class=\"flex\" data-v-8ac6732c><div class=\"w-36 text-xs font-bold\" data-v-8ac6732c>ID</div> <div class=\"font-mono limit\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.value.item_id)) + "</div></div> <div class=\"flex\" data-v-8ac6732c><div class=\"w-36 text-xs font-bold\" data-v-8ac6732c>REGISTRANT</div> <div class=\"font-mono limit\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.value.owner)) + "</div></div> <div class=\"flex\" data-v-8ac6732c><div class=\"w-36 text-xs font-bold\" data-v-8ac6732c>CONTROLLER</div> <div class=\"font-mono limit\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.value.owner)) + "</div></div> <div class=\"flex\" data-v-8ac6732c><div class=\"w-36 text-xs font-bold\" data-v-8ac6732c>RESOLVER</div> <div class=\"font-mono limit\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.value.owner)) + "</div></div> <div class=\"flex\" data-v-8ac6732c><div class=\"w-36 text-xs font-bold\" data-v-8ac6732c>OWNER</div> <div class=\"font-mono limit\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.value.owner)) + "</div></div></div></div> <div class=\"md:-mx-4 p-4 bg-yellow-50 space-y-2 border\" data-v-8ac6732c><h2 class=\"uppercase text-gray-500 font-bold\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.value.name) + ".eth Metadata") + "</h2> " + _vm._ssrList(Object.keys(_vm.traits), function (item) {
+    return "<div class=\"flex text-xs\" data-v-8ac6732c><div class=\"w-36 font-bold uppercase\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(item)) + "</div> <div class=\"font-mono limit\" data-v-8ac6732c>" + (_vm.traits[item] ? "<span data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.traits[item])) + "</span>" : "<span class=\"text-gray-400\" data-v-8ac6732c>Not set</span>") + "</div></div>";
+  }) + "</div> "), _vm._ssrNode("<div data-v-8ac6732c>", "</div>", [_vm._ssrNode("<table class=\"min-w-full text-gray-500\" data-v-8ac6732c>", "</table>", [_vm._ssrNode("<thead class=\"font-medium uppercase\" data-v-8ac6732c><tr class=\"border-b border-dashed text-xs\" data-v-8ac6732c><th scope=\"col\" class=\"py-2 text-left tracking-wide\" data-v-8ac6732c>Event</th> <th scope=\"col\" class=\"px-3 py-2 text-left tracking-wide\" data-v-8ac6732c>Price</th> <th scope=\"col\" class=\"px-3 py-2 text-left tracking-wide hidden md:table-cell\" data-v-8ac6732c>From</th> <th scope=\"col\" class=\"px-3 py-2 text-left tracking-wide\" data-v-8ac6732c>To</th> <th scope=\"col\" class=\"py-2 text-left tracking-wide\" data-v-8ac6732c>Date\n        </th></tr></thead> "), _vm._ssrNode("<tbody class=\"divide-y divide-gray-200 bg-white\" data-v-8ac6732c>", "</tbody>", _vm._l(_vm.value.transactions, function (row) {
+    return _vm._ssrNode("<tr data-v-8ac6732c>", "</tr>", [_vm._ssrNode("<td class=\"whitespace-nowrap py-2 font-medium\" data-v-8ac6732c>", "</td>", [_vm._ssrNode("<a target=\"_blank\"" + _vm._ssrAttr("href", `https://etherscan.io/tx/${row.tx_hash}`) + " class=\"flex space-x-1 capitalize\" data-v-8ac6732c>", "</a>", [_c('icon', {
       attrs: {
         "name": row.event_name
       }
-    }), _vm._ssrNode(" <span data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(row.event_name || 'minted')) + "</span>")], 2)]), _vm._ssrNode(" "), _vm._ssrNode("<td class=\"whitespace-nowrap py-2 px-3\" data-v-04ae9f7e>", "</td>", [_vm._ssrNode("<div class=\"flex space-x-1 items-center\" data-v-04ae9f7e>", "</div>", [_c('icon', {
+    }), _vm._ssrNode(" <span data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(row.event_name || 'minted')) + "</span>")], 2)]), _vm._ssrNode(" "), _vm._ssrNode("<td class=\"whitespace-nowrap py-2 px-3\" data-v-8ac6732c>", "</td>", [_vm._ssrNode("<div class=\"flex space-x-1 items-center\" data-v-8ac6732c>", "</div>", [_c('icon', {
       attrs: {
         "name": "eth"
       }
-    }), _vm._ssrNode(" <span data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.displayPrice(row.price))) + "</span>")], 2)]), _vm._ssrNode(" <td class=\"whitespace-nowrap py-2 px-3 hidden md:table-cell\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.normalizeAdd(row.fr)) + "\n        ") + "</td> <td class=\"whitespace-nowrap py-2 px-3\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(_vm.normalizeAdd(row.to))) + "</td> <td class=\"whitespace-nowrap py-2\" data-v-04ae9f7e><div class=\"font-bold\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(new Date(row.timestamp).toLocaleDateString())) + "</div> <div class=\"text-gray-500 text-xs\" data-v-04ae9f7e>" + _vm._ssrEscape(_vm._s(new Date(row.timestamp).toLocaleTimeString())) + "</div></td>")], 2);
+    }), _vm._ssrNode(" <span data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.displayPrice(row.price))) + "</span>")], 2)]), _vm._ssrNode(" <td class=\"whitespace-nowrap py-2 px-3 hidden md:table-cell\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.normalizeAdd(row.fr)) + "\n        ") + "</td> <td class=\"whitespace-nowrap py-2 px-3\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(_vm.normalizeAdd(row.to))) + "</td> <td class=\"whitespace-nowrap py-2\" data-v-8ac6732c><div class=\"font-bold\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(new Date(row.timestamp).toLocaleDateString())) + "</div> <div class=\"text-gray-500 text-xs\" data-v-8ac6732c>" + _vm._ssrEscape(_vm._s(new Date(row.timestamp).toLocaleTimeString())) + "</div></td>")], 2);
   }), 0)], 2)])], 2) : _vm._e();
 };
 
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./pages/_name.vue?vue&type=template&id=04ae9f7e&scoped=true&
+// CONCATENATED MODULE: ./pages/_name.vue?vue&type=template&id=8ac6732c&scoped=true&
 
 // EXTERNAL MODULE: external "web3"
 var external_web3_ = __webpack_require__(10);
@@ -198,16 +198,6 @@ var component = Object(componentNormalizer["a" /* default */])(
       return new Date(this.value.mint_date);
     },
 
-    rows() {
-      return [{
-        name: "Transfer",
-        from: "0x0000",
-        to: "0x0000",
-        "price": 0.022,
-        timestamp: "22/22/2022"
-      }];
-    },
-
     traits() {
       return {
         "email": "",
@@ -245,7 +235,7 @@ var _name_component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   _name_injectStyles,
-  "04ae9f7e",
+  "8ac6732c",
   "24ab5c16"
   
 )

@@ -83,10 +83,10 @@
         <tbody class="divide-y divide-gray-200 bg-white">
         <tr v-for="row in value.transactions" :key="row.id">
           <td class="whitespace-nowrap py-2 font-medium">
-            <div class="flex space-x-1 capitalize">
+            <a ref="nofollow" target="_blank" :href="`https://etherscan.io/tx/${row.tx_hash}`" class="flex space-x-1 capitalize">
               <icon :name="row.event_name"/>
               <span>{{ row.event_name || 'minted' }}</span>
-            </div>
+            </a>
           </td>
           <td class="whitespace-nowrap py-2 px-3">
             <div class="flex space-x-1 items-center">
@@ -132,11 +132,6 @@ export default {
     },
     formatDateMint() {
       return new Date(this.value.mint_date)
-    },
-    rows() {
-      return [
-        {name: "Transfer", from: "0x0000", to: "0x0000", "price": 0.022, timestamp: "22/22/2022"}
-      ]
     },
     traits() {
       return {

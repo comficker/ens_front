@@ -21,10 +21,10 @@
         </div>
         <div class="flex">
           <client-only>
-            <div class="p-3 px-4 flex space-x-2 items-center cursor-pointer border" @click="login()">
-              <icon class="md" name="user"/>
-              <span class="font-bold">{{ getUserName }}</span>
-              <div v-if="loggedIn" class="border-l pl-1" @click="logout()">
+            <div class="p-3 px-4 flex items-center cursor-pointer border" @click="login()">
+              <span class="hidden md:block"><icon class="md" name="user"/></span>
+              <span class="font-bold hidden md:block border-r mx-2 px-2">{{ getUserName }}</span>
+              <div v-if="loggedIn" @click="logout()">
                 <icon name="close"></icon>
               </div>
             </div>
