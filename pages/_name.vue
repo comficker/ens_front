@@ -38,23 +38,23 @@
       <div class="space-y-2">
         <div class="flex">
           <div class="w-36 text-xs font-bold">ID</div>
-          <div class="font-mono limit">{{ value.item_id }}</div>
+          <div class="limit tracking-wide">{{ value.item_id }}</div>
         </div>
         <div class="flex">
           <div class="w-36 text-xs font-bold">REGISTRANT</div>
-          <div class="font-mono limit">{{ value.owner }}</div>
+          <div class="limit tracking-wide">{{ value.owner }}</div>
         </div>
         <div class="flex">
           <div class="w-36 text-xs font-bold">CONTROLLER</div>
-          <div class="font-mono limit">{{ value.owner }}</div>
+          <div class="limit tracking-wide">{{ value.owner }}</div>
         </div>
         <div class="flex">
           <div class="w-36 text-xs font-bold">RESOLVER</div>
-          <div class="font-mono limit">{{ value.owner }}</div>
+          <div class="limit tracking-wide">{{ value.owner }}</div>
         </div>
         <div class="flex">
           <div class="w-36 text-xs font-bold">OWNER</div>
-          <div class="font-mono limit">{{ value.owner }}</div>
+          <div class="limit tracking-wide">{{ value.owner }}</div>
         </div>
       </div>
     </div>
@@ -62,9 +62,9 @@
       <h2 class="uppercase text-gray-500 font-bold">{{ value.name }}.eth Metadata</h2>
       <div v-for="item in Object.keys(traits)" :key="item" class="flex text-xs">
         <div class="w-36 font-bold uppercase">{{ item }}</div>
-        <div class="font-mono limit">
+        <div class="limit tracking-wide">
           <span v-if="traits[item]">{{ traits[item] }}</span>
-          <span class="text-gray-400" v-else>Not set</span>
+          <span class="text-gray-400 italic" v-else>Not set</span>
         </div>
       </div>
     </div>

@@ -229,14 +229,14 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var Sort = (component.exports);
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=template&id=91f5797c&
-var ProjectCardvue_type_template_id_91f5797c_render = function render() {
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=template&id=c6ce324e&
+var ProjectCardvue_type_template_id_c6ce324e_render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
   return _c('div', {
     staticClass: "p-4 py-2 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 border-t"
-  }, [_vm._ssrNode("<div class=\"flex-1 relative\">", "</div>", [_vm._ssrNode("<div class=\"absolute inset-0 flex items-center\">", "</div>", [_vm._ssrNode("<h4 class=\"font-bold leading-none limit text-xl\">", "</h4>", [_c('nuxt-link', {
+  }, [_vm._ssrNode("<div class=\"flex-1 relative\">", "</div>", [_vm._ssrNode("<div class=\"absolute inset-0 flex items-center\">", "</div>", [_vm._ssrNode("<h4 class=\"font-bold leading-none limit text-xl tracking-wide\">", "</h4>", [_c('nuxt-link', {
     attrs: {
       "to": `/${_vm.value.id}-${_vm.value.name}.eth`
     }
@@ -247,9 +247,9 @@ var ProjectCardvue_type_template_id_91f5797c_render = function render() {
   })], 2), _vm._ssrNode(" <div class=\"w-24 hidden md:block text-right text-xs\"><div class=\"font-bold\">" + _vm._ssrEscape(_vm._s(_vm.mintDate.toLocaleDateString())) + "</div> <div class=\"text-gray-500\">" + _vm._ssrEscape(_vm._s(_vm.mintDate.toLocaleTimeString())) + "</div></div> <div class=\"w-24 text-right text-xs\"><div class=\"font-bold\">" + _vm._ssrEscape(_vm._s(_vm.expiredDate.toLocaleDateString())) + "</div> <div class=\"text-gray-500\">" + _vm._ssrEscape(_vm._s(_vm.expiredDate.toLocaleTimeString())) + "</div></div>")], 2);
 };
 
-var ProjectCardvue_type_template_id_91f5797c_staticRenderFns = [];
+var ProjectCardvue_type_template_id_c6ce324e_staticRenderFns = [];
 
-// CONCATENATED MODULE: ./components/partials/ProjectCard.vue?vue&type=template&id=91f5797c&
+// CONCATENATED MODULE: ./components/partials/ProjectCard.vue?vue&type=template&id=c6ce324e&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./components/partials/ProjectCard.vue?vue&type=script&lang=js&
 const web3 = __webpack_require__(10);
@@ -289,8 +289,8 @@ const web3 = __webpack_require__(10);
 
 var ProjectCard_component = Object(componentNormalizer["a" /* default */])(
   partials_ProjectCardvue_type_script_lang_js_,
-  ProjectCardvue_type_template_id_91f5797c_render,
-  ProjectCardvue_type_template_id_91f5797c_staticRenderFns,
+  ProjectCardvue_type_template_id_c6ce324e_render,
+  ProjectCardvue_type_template_id_c6ce324e_staticRenderFns,
   false,
   null,
   null,
