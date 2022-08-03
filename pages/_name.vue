@@ -1,8 +1,15 @@
 <template>
   <div v-if="value" class="max-w-4xl my-4 mx-auto space-y-4 md:space-y-6">
     <div class="flex items-center gap-3">
-      <h1 class="text-5xl limit font-bold">{{ value.name }}.eth</h1>
+      <h1 class="text-5xl limit font-semibold">{{ value.name }}.eth</h1>
       <div class="flex space-x-3 items-center">
+        <a
+          ref="nofollow"
+          :href="`https://opensea.io/assets/ethereum/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/${value.item_id}`"
+          target="_blank"
+        >
+          <img class="w-8 h-8" src="/opensea.svg" alt="">
+        </a>
         <a ref="nofollow" :href="`https://etherscan.io/address/${value.owner}`" target="_blank">
           <img class="w-8 h-8" src="/etherscan.svg" alt="">
         </a>

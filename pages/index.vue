@@ -15,10 +15,11 @@
           <icon name="sort"></icon>
           <span>Filter</span>
         </div>
+        <nuxt-link to="/bulk-search" class="btn pri">Bulk Search</nuxt-link>
       </div>
     </div>
     <div class="border px-4 mt-3">
-      <div class="-mx-4 my-2 text-sm font-bold uppercase flex p-4 pb-2 pt-0 border-b justify-between items-center">
+      <div class="-mx-4 my-2 text-sm font-bold uppercase flex p-3 pb-2 pt-0 border-b justify-between items-center">
         <div class="md:flex gap-1 underline text-center">
           <div class="flex gap-1" v-for="(x, i) in alphabet" :key="i">
             <nuxt-link
@@ -38,7 +39,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="-mx-4 my-2 text-sm font-bold uppercase p-4 py-1 flex space-x-4">
+      <div class="-mx-4 my-2 text-xs font-bold uppercase p-3 py-1 flex space-x-4">
         <div class="flex sort flex-1">
           <sort v-model="sort.name"/>
           <span>Name</span>
@@ -54,6 +55,9 @@
         <div class="flex sort w-24 justify-end">
           <sort v-model="sort.expired_date"/>
           <span>Expired</span>
+        </div>
+        <div class="hidden md:flex sort w-24 justify-end">
+          <span>Links</span>
         </div>
       </div>
       <project-card v-for="item in response.results" :key="item.id" :value="item"/>
@@ -103,24 +107,8 @@ export default {
       reports: []
     }
   },
-  async fetch() {
-    // this.reports = await this.$axios.$get('/reports/', {
-    //   params: {
-    //     page_size: 360,
-    //     end: this.today
-    //   }
-    // }).then(res => {
-    //   return res.results.map(x => {
-    //     return {
-    //       date: x.created,
-    //       count: x.minted
-    //     }
-    //   })
-    // })
-  },
   computed: {
     response() {
-      const toDay = new Date()
       return this.$store.state.data.response;
     },
   }

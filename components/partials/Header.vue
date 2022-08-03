@@ -14,15 +14,15 @@
       </div>
       <div class="flex gap-4 text-xl">
         <div class="flex">
-          <input v-model="name" class="border border-r-0 outline-none p-3 w-full" type="text" placeholder="Search">
-          <div class="btn xl pri" @click="search()">
+          <input v-model="name" class="border border-r-0 outline-none p-2 px-4 w-full" type="text" placeholder="Search">
+          <div class="btn pri" @click="search()">
             <icon class="lg" name="search"></icon>
           </div>
         </div>
         <div class="flex">
           <client-only>
-            <div class="p-3 px-4 flex items-center cursor-pointer border" @click="login()">
-              <span class="font-bold hidden md:block border-r mx-2 px-2">{{ getUserName }}</span>
+            <div class="p-2 px-4 flex items-center cursor-pointer border" @click="login()">
+              <span class="font-bold hidden md:block border-r mr-2 px-2">{{ getUserName }}</span>
               <div v-if="" @click="logout()">
                 <icon :name="loggedIn ? 'close': 'user'"></icon>
               </div>
