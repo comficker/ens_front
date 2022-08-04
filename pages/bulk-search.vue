@@ -18,7 +18,7 @@
           v-for="item in results" :key="item.name"
           class="flex items-center justify-between border-b p-2 px-4"
         >
-          <div class="font-bold">{{ item.name }}</div>
+          <div class="font-bold">{{ item.name }}.eth</div>
           <div class="flex space-x-2 text-xs">
             <a
               v-if="item.isBought" ref="nofollow"
@@ -68,16 +68,19 @@ export default {
       }
       if (!this.lines) return;
       this.fetching = true;
-      const lines = this.lines.split("\n").filter(onlyUnique)
+      const lines = this.lines.split("\n").filter(onlyUnique).map(x => {
+        if (x.endsWith(".eth")) {
+          x = x.substr(0, x.length - 4)
+        }
+        return x
+      })
       const results = await Promise.all(
         lines.map(x => {
-          if (!x.endsWith(".eth")) {
-            x = x + ".eth"
-          }
-          return web3.eth.ens.getOwner(x)
+          return web3.eth.ens.getOwner(x + ".eth")
         })
       )
       this.results = results.map((x, i) => {
+
         return {
           name: lines[i],
           owner: x,
