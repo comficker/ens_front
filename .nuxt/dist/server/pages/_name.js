@@ -1,7 +1,7 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 42:
+/***/ 72:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57,7 +57,7 @@ var Chartvue_type_template_id_c43c237c_scoped_true_staticRenderFns = [];
 // CONCATENATED MODULE: ./components/Chart.vue?vue&type=template&id=c43c237c&scoped=true&
 
 // EXTERNAL MODULE: external "chart.js"
-var external_chart_js_ = __webpack_require__(40);
+var external_chart_js_ = __webpack_require__(44);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Chart.vue?vue&type=script&lang=js&
 

@@ -17,6 +17,13 @@ export default {
     ['SET_RESPONSE'](state, res) {
       state.response = res;
     },
+    ['PUSH_RESPONSE'](state, item) {
+      if (!state.response.results.map(x => x.id).includes(item.id)) {
+        state.response.results.unshift(item)
+        state.response.count++
+        state.response.results.pop()
+      }
+    },
   },
   actions: {
     async fetchData({commit, state}, kwargs) {

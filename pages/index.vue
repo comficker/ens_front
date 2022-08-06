@@ -60,7 +60,9 @@
           <span>Links</span>
         </div>
       </div>
-      <project-card v-for="item in response.results" :key="item.id" :value="item"/>
+      <TransitionGroup tag="div" name="list" class="relative">
+        <project-card v-for="item in response.results" :key="item.id" :value="item"/>
+      </TransitionGroup>
       <div class="bg-gray-50 -mx-4 text-xs font-bold uppercase p-2 flex border-t justify-between items-center">
         <div class="flex space-x-1">total: {{ response.count }}</div>
         <div class="flex space-x-2">
@@ -79,6 +81,8 @@
 <script>
 import Sort from "~/components/helpers/Utils/Sort";
 import ProjectCard from "~/components/partials/ProjectCard";
+
+const {io} = require("socket.io-client");
 
 export default {
   name: 'IndexPage',
@@ -109,6 +113,13 @@ export default {
     response() {
       return this.$store.state.data.response;
     },
+  },
+  mounted() {
+    const socket = io("https://signal.enshunt.com/");
+    window.socket = socket;
+    socket.on("new_register", (res) => {
+      this.$store.commit('data/PUSH_RESPONSE', res)
+    });
   }
 }
 </script>

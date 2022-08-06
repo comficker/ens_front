@@ -3,18 +3,21 @@
     "name": "bulk-search",
     "path": "/bulk-search",
     "component": "/Users/hoanganhlam/WebstormProjects/enshunt/pages/bulk-search.vue",
-    "chunkName": "pages/bulk-search"
+    "chunkName": "pages/bulk-search",
+    "_name": "_0ef87e9d"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/hoanganhlam/WebstormProjects/enshunt/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_991f8aa8"
   },
   {
     "name": "name",
     "path": "/:name",
     "component": "/Users/hoanganhlam/WebstormProjects/enshunt/pages/_name.vue",
-    "chunkName": "pages/_name"
+    "chunkName": "pages/_name",
+    "_name": "_56ac3944"
   }
 ]

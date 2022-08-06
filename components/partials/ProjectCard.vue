@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3 py-1.5 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 border-t">
+  <div class="p-3 py-1.5 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 bg-white border-t">
     <div class="flex-1 relative">
       <div class="absolute inset-0 flex items-center">
         <h4 class="font-bold leading-none limit text-xl tracking-wide">
