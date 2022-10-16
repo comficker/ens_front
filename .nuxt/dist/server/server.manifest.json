@@ -1,0 +1,15 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/_name.js": "pages/_name.js",
+    "pages/bulk-search.js": "pages/bulk-search.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/_name.js": "pages/_name.js.map",
+    "pages/bulk-search.js": "pages/bulk-search.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
