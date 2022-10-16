@@ -19,26 +19,6 @@
       </div>
     </div>
     <div class="border px-4 mt-3">
-      <div class="-mx-4 my-2 text-sm font-bold uppercase flex p-3 pb-2 pt-0 border-b justify-between items-center">
-        <div class="md:flex gap-1 underline text-center">
-          <div class="flex gap-1" v-for="(x, i) in alphabet" :key="i">
-            <nuxt-link
-              class="block w-5 h-6 md:w-3 md:h-3"
-              v-for="item in x" :key="item"
-              :to="`/?start=${item}`"
-            >{{ item }}
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="hidden md:flex space-x-2">
-          <nuxt-link v-if="response.previous !== null" :to="response.previous" class="p-1 border cursor-pointer">
-            <icon name="chv-left"/>
-          </nuxt-link>
-          <nuxt-link v-if="response.next !== null" :to="response.next" class="p-1 border cursor-pointer">
-            <icon name="chv-right"/>
-          </nuxt-link>
-        </div>
-      </div>
       <div class="-mx-4 my-2 text-xs font-bold uppercase p-3 py-1 flex space-x-4">
         <div class="flex sort flex-1">
           <sort v-model="sort.name"/>
@@ -48,11 +28,11 @@
           <sort v-model="sort.current_price"/>
           <span>Price</span>
         </div>
-        <div class="md:flex sort w-24 hidden justify-end">
+        <div class="md:flex sort w-28 hidden justify-end">
           <sort v-model="sort.mint_date"/>
           <span>Created</span>
         </div>
-        <div class="flex sort w-24 justify-end">
+        <div class="flex sort w-28 justify-end">
           <sort v-model="sort.expired_date"/>
           <span>Expired</span>
         </div>
@@ -71,6 +51,18 @@
           </nuxt-link>
           <nuxt-link v-if="response.next !== null" :to="response.next" class="p-1 border cursor-pointer">
             <icon name="chv-right"/>
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
+    <div class="my-4 text-sm font-bold uppercase flex justify-center items-center text-gray-300">
+      <div class="md:flex gap-1 underline text-center">
+        <div class="flex gap-1" v-for="(x, i) in alphabet" :key="i">
+          <nuxt-link
+            class="block w-5 h-6 md:w-3 md:h-3 hover:text-gray-900"
+            v-for="item in x" :key="item"
+            :to="`/?start=${item}`"
+          >{{ item }}
           </nuxt-link>
         </div>
       </div>

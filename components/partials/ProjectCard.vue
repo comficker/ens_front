@@ -1,5 +1,5 @@
 <template>
-  <div class="p-3 py-1.5 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 bg-white border-t">
+  <div class="p-3 -mx-4 flex space-x-4 hover:bg-gray-100 duration-300 bg-white border-t">
     <div class="flex-1 relative">
       <div class="absolute inset-0 flex items-center">
         <h4 class="font-bold leading-none limit text-xl tracking-wide">
@@ -9,15 +9,15 @@
     </div>
     <div class="w-24 flex space-x-1 items-center justify-end">
       <span>{{ formatPrice }}</span>
-      <icon name="eth"></icon>
+      <icon class="sm" name="eth"></icon>
     </div>
-    <div class="w-24 hidden md:block text-right text-xs">
-      <div class="font-bold">{{ mintDate.toLocaleDateString() }}</div>
-      <div class="text-gray-500">{{ mintDate.toLocaleTimeString() }}</div>
+    <div class="w-28 hidden md:block text-right">
+      <div>{{ mintDate.toISOString().split('T')[0] }}</div>
+      <div v-if="false" class="text-gray-500">{{ mintDate.toLocaleTimeString() }}</div>
     </div>
-    <div class="w-24 text-right text-xs">
-      <div class="font-bold">{{ expiredDate.toLocaleDateString() }}</div>
-      <div class="text-gray-500">{{ expiredDate.toLocaleTimeString() }}</div>
+    <div class="w-28 text-right">
+      <div>{{ expiredDate.toISOString().split('T')[0] }}</div>
+      <div v-if="false" class="text-gray-500">{{ expiredDate.toLocaleTimeString() }}</div>
     </div>
     <div class="w-24 hidden md:block">
       <div class="flex space-x-2 justify-end text-xs">

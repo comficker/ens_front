@@ -20,6 +20,9 @@ Vue.mixin({
         isN = false;
         seconds = 0 - seconds;
       }
+      if (!isN) {
+        return '_'
+      }
       let interval = seconds / 31536000;
       if (interval > 1) {
         return Math.floor(interval) + " years " + (isN ? "left" : "ago");
